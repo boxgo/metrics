@@ -19,8 +19,8 @@ type (
 		Subsystem     string `config:"subsystem"`
 		PushEnabled   bool   `config:"pushEnabled"`
 		PushTargetURL string `config:"pushTargetURL"`
-		PushJobName   string `config:"pushJobName" desc:"default is AppName"`
-		PushInterval  int    `config:"pushInterval" desc:"seconds, default is 3"`
+		PushJobName   string `config:"pushJobName" help:"default is AppName"`
+		PushInterval  int    `config:"pushInterval" help:"seconds, default is 3"`
 
 		name string
 		app  minibox.App
